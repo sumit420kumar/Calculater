@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CALC-X // Retro Futuristic Calculator</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <div class="calculator-wrapper">
+    <div class="calculator">
+
+      <!-- Brand -->
+      <div class="brand">CALC&#8209;X &nbsp;&#x2022;&nbsp; v2.0</div>
+
+      <!-- Display -->
+      <div class="display">
+        <div class="display-expression" id="display-expression"></div>
+        <div class="display-main" id="display-main">0</div>
+      </div>
+
+      <!-- Button Grid -->
+      <div class="buttons">
+
+        <!-- Row 1: Functions -->
+        <button class="btn btn-fn" id="btn-clear">AC</button>
+        <button class="btn btn-fn" id="btn-sign">+/&minus;</button>
+        <button class="btn btn-fn" id="btn-percent">%</button>
+        <button class="btn btn-op" data-op="/">&#247;</button>
+
+        <!-- Row 2 -->
+        <button class="btn btn-num" data-value="7">7</button>
+        <button class="btn btn-num" data-value="8">8</button>
+        <button class="btn btn-num" data-value="9">9</button>
+        <button class="btn btn-op" data-op="*">&times;</button>
+
+        <!-- Row 3 -->
+        <button class="btn btn-num" data-value="4">4</button>
+        <button class="btn btn-num" data-value="5">5</button>
+        <button class="btn btn-num" data-value="6">6</button>
+        <button class="btn btn-op" data-op="-">&minus;</button>
+
+        <!-- Row 4 -->
+        <button class="btn btn-num" data-value="1">1</button>
+        <button class="btn btn-num" data-value="2">2</button>
+        <button class="btn btn-num" data-value="3">3</button>
+        <button class="btn btn-op" data-op="+">+</button>
+
+        <!-- Row 5 -->
+        <button class="btn btn-num btn-zero" data-value="0">0</button>
+        <button class="btn btn-num" id="btn-decimal" data-value=".">.</button>
+        <button class="btn btn-eq" id="btn-equals">=</button>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
